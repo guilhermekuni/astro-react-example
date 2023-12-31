@@ -1,13 +1,11 @@
-import { PRODUCTS } from "./data/products";
-import { ProductItem } from "./components/ProductItem";
+import { ProductList } from "./components/ProductList";
 
 function App() {
   return (
-    <section>
-      {PRODUCTS.map(({ id, name, image }) => (
-        <ProductItem key={id} id={id} name={name} img={image} />
-      ))}
-    </section>
+    <main className="p-4">
+      <h1 className="text-4xl mb-4">React Example</h1>
+      <ProductList />
+    </main>
   );
 }
 
